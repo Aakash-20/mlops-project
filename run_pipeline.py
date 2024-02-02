@@ -2,4 +2,4 @@ from pipeline.training_pipeline import train_pipeline
 
 if __name__ == "__main__":
     # Run the pipeline
-    train_pipeline(data_path="data\olist_customers_dataset.csv")
+    train_pipeline(data_path="C:/Users/aashi/Documents/mlops-project/data/olist_customers_dataset.csv")

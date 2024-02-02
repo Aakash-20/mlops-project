@@ -5,14 +5,11 @@ from steps.model_train import train_model
 from steps.evaluation import evaluate_model
 
 
-@pipeline()
+@pipeline(enable_cache = True)
 def train_pipeline(data_path: str):
-    """Defines a pipeline for model training.
     
-    Args:
-        data_path (str): The path to the dataset on which the models will be trained
-    """
     df = ingest_df(data_path)
-    clean_df(df)
-    train_model(df)
-    evaluate_model(df)
+    X_train, X_test, y_train, y_test = clean_df(df)
+    model = train_model(X_train, X_test, y_train, y_test)
+    r2, rmse = evaluate_model(model, X_test, y_test)
+
