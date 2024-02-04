@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/aashi/Documents/mlops-project/mlruns/0/0fdac0bf28c240998fa944e57949f711/artifacts
+end_time: 1707040993141
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0fdac0bf28c240998fa944e57949f711
+run_name: nosy-shrike-742
+run_uuid: 0fdac0bf28c240998fa944e57949f711
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707040985154
+status: 3
+tags: []
+user_id: aashi
